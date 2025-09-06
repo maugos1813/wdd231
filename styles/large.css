@@ -1,0 +1,22 @@
+@media (min-width:768px){
+    .intro{
+      display:flex;
+      gap:1rem;
+      align-items:flex-start;
+    }
+    .about{flex:2}
+    .student-photo{flex:1;max-width:260px}
+    .student-photo img{height:100%;object-fit:cover}
+    .primary-nav{display:flex}
+    .primary-nav ul{flex-direction:row;gap:.5rem}
+    .primary-nav a{color:#fff;background:transparent;padding:.6rem 1rem}
+    .site-header{margin-bottom:0.8rem}
+  }
+
+  @media (min-width:1000px){
+    body{padding:2rem}
+    h1{font-size:2rem}
+    .course-list{flex-direction:row;flex-wrap:wrap}
+    .course-item{width:calc(50% - .6rem)}
+    .filters{justify-content:flex-start}
+  }

@@ -1,11 +1,97 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Course home page for WDD231 — responsive, accessible, and dynamic." />
+  <meta name="author" content="Maugos" />
+  <title>Course Home - WDD231</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <script defer src="scripts/navigation.js"></script>
+  <script defer src="scripts/date.js"></script>
+  <script defer src="scripts/courses.js"></script>
 </head>
 <body>
-    
+  <header class="site-header">
+    <div class="brand">
+      <svg class="logo" width="56" height="56" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+        <rect width="100" height="100" rx="12" fill="#333"/>
+        <text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="48" font-family="Inter, system-ui" dy=".35em">S</text>
+      </svg>
+      <span class="sitename">Site Name</span>
+    </div>
+
+    <button id="navToggle" class="nav-toggle" aria-controls="primaryNav" aria-expanded="false" aria-label="Open navigation">
+      <span class="hamburger" aria-hidden="true"></span>
+    </button>
+  </header>
+
+  <nav id="primaryNav" class="primary-nav" data-visible="false">
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="chamber/index.html">Chamber Project</a></li>
+      <li><a href="final/index.html">Final Project</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Home</h1>
+
+    <section class="intro">
+      <div class="about card">
+        <h2>About Me</h2>
+        <p>
+          Massa facilisis per purus si imperdiet curae amet. This is placeholder text — replace with your own summary.
+        </p>
+      </div>
+
+      <aside class="student-photo card" aria-labelledby="student-photo-heading">
+        <h2 id="student-photo-heading">Student Photo</h2>
+        <img src="images/studentphoto.jpeg" alt="Student photo placeholder" />
+      </aside>
+    </section>
+
+    <section class="courses card" aria-labelledby="courses-heading">
+      <h2 id="courses-heading">Web Certificate Courses</h2>
+
+      <div class="filters" role="region" aria-label="Course filters">
+        <button class="filter-btn" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter-btn" data-filter="cse" aria-pressed="false">CSE</button>
+        <button class="filter-btn" data-filter="wdd" aria-pressed="false">WDD</button>
+      </div>
+
+      <div id="courseList" class="course-list" aria-live="polite"></div>
+
+      <p class="credits-summary">Total credits for displayed courses: <span id="creditTotal">0</span></p>
+    </section>
+
+    <section class="social card" aria-labelledby="social-heading">
+        <h2 id="social-heading">Connect</h2>
+        <div class="social-links">
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <img src="images/github.png" alt="GitHub" width="32" height="32">
+          </a>
+          <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <img src="images/logotipo-de-linkedin.png" alt="LinkedIn" width="32" height="32">
+          </a>
+          <a href="#" aria-label="Other social">
+            <img src="images/logotipos.png" alt="Other social" width="32" height="32">
+          </a>
+        </div>
+      </section>
+      
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="currentYear" aria-live="polite">2025</span> • Mauro Agostinelli • Milán, Italy</p>
+    <p id="lastModified">Last modification: </p>
+  </footer>
 </body>
 </html>
