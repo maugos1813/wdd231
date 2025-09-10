@@ -47,12 +47,12 @@ body {
     width: 22px; height: 2px; background: var(--accent); display: block; position: relative;
 }
 
-.hambuerguer::before, .hambuerguer::after{
+.hamburguer::before, .hamburguer::after{
     content: ""; position: absolute; left: 0; right: 0; height: 2px; background: var(--accent);
 }
 
-.hambuerguer::before{top: -7px;}
-.hambuerguer::after{bottom: 7px;}
+.hamburguer::before{top: -7px;}
+.hamburguer::after{bottom: 7px;}
 
 .primary-nav{display: none; background: var(--accent); color: #fff; border-radius: 8px; padding: .5rem;}
 .primary-nav ul {list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: .25rem;}
