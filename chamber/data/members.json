@@ -1,0 +1,66 @@
+[
+    {
+      "name": "Empresa Uno",
+      "address": "Calle Falsa 123, Ciudad",
+      "phone": "123-456-7890",
+      "website": "https://www.empresauno.com",
+      "image": "empresa1.png",
+      "membership": 1,
+      "notes": "Proveedor de servicios tecnológicos"
+    },
+    {
+      "name": "Empresa Dos",
+      "address": "Avenida Siempre Viva 456, Ciudad",
+      "phone": "987-654-3210",
+      "website": "https://www.empresados.com",
+      "image": "empresa2.png",
+      "membership": 2,
+      "notes": "Tienda de productos orgánicos"
+    },
+    {
+      "name": "Empresa Tres",
+      "address": "Boulevard Central 789, Ciudad",
+      "phone": "555-123-4567",
+      "website": "https://www.empresatres.com",
+      "image": "empresa3.png",
+      "membership": 3,
+      "notes": "Agencia de marketing digital"
+    },
+    {
+      "name": "Empresa Cuatro",
+      "address": "Plaza Mayor 12, Ciudad",
+      "phone": "444-567-8901",
+      "website": "https://www.empresacuatro.com",
+      "image": "empresa4.png",
+      "membership": 1,
+      "notes": "Consultoría financiera"
+    },
+    {
+      "name": "Empresa Cinco",
+      "address": "Calle Sol 34, Ciudad",
+      "phone": "333-222-1110",
+      "website": "https://www.empresacinco.com",
+      "image": "empresa5.png",
+      "membership": 2,
+      "notes": "Estudio de arquitectura"
+    },
+    {
+      "name": "Empresa Seis",
+      "address": "Avenida Luna 56, Ciudad",
+      "phone": "777-888-9999",
+      "website": "https://www.empresaseis.com",
+      "image": "empresa6.png",
+      "membership": 3,
+      "notes": "Tienda de electrodomésticos"
+    },
+    {
+      "name": "Empresa Siete",
+      "address": "Calle Estrella 78, Ciudad",
+      "phone": "111-222-3333",
+      "website": "https://www.empresasiete.com",
+      "image": "empresa7.png",
+      "membership": 1,
+      "notes": "Gimnasio y centro deportivo"
+    }
+  ]
+  
