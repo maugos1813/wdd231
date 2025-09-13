@@ -4,7 +4,7 @@
       "address": "Calle Falsa 123, Ciudad",
       "phone": "123-456-7890",
       "website": "https://maugos1813.github.io/wdd231/chamber/directory.html",
-      "image": "empresa1.png",
+      "image": "favicon-2.ico",
       "membership": 1,
       "notes": "Proveedor de servicios tecnológicos"
     },
@@ -13,7 +13,7 @@
       "address": "Avenida Siempre Viva 456, Ciudad",
       "phone": "987-654-3210",
       "website": "https://maugos1813.github.io/wdd231/chamber/directory.html",
-      "image": "empresa2.png",
+      "image": "favicon-2.ico",
       "membership": 2,
       "notes": "Tienda de productos orgánicos"
     },
@@ -22,7 +22,7 @@
       "address": "Boulevard Central 789, Ciudad",
       "phone": "555-123-4567",
       "website": "https://maugos1813.github.io/wdd231/chamber/directory.html",
-      "image": "empresa3.png",
+      "image": "favicon-2.ico",
       "membership": 3,
       "notes": "Agencia de marketing digital"
     },
@@ -31,7 +31,7 @@
       "address": "Plaza Mayor 12, Ciudad",
       "phone": "444-567-8901",
       "website": "https://maugos1813.github.io/wdd231/chamber/directory.html",
-      "image": "empresa4.png",
+      "image": "favicon-2.ico",
       "membership": 1,
       "notes": "Consultoría financiera"
     },
@@ -40,7 +40,7 @@
       "address": "Calle Sol 34, Ciudad",
       "phone": "333-222-1110",
       "website": "https://maugos1813.github.io/wdd231/chamber/directory.html",
-      "image": "empresa5.png",
+      "image": "favicon-2.ico",
       "membership": 2,
       "notes": "Estudio de arquitectura"
     },
@@ -49,7 +49,7 @@
       "address": "Avenida Luna 56, Ciudad",
       "phone": "777-888-9999",
       "website": "https://maugos1813.github.io/wdd231/chamber/directory.html",
-      "image": "empresa6.png",
+      "image": "favicon-2.ico",
       "membership": 3,
       "notes": "Tienda de electrodomésticos"
     },
@@ -58,7 +58,7 @@
       "address": "Calle Estrella 78, Ciudad",
       "phone": "111-222-3333",
       "website": "https://maugos1813.github.io/wdd231/chamber/directory.html",
-      "image": "empresa7.png",
+      "image": "favicon-2.ico",
       "membership": 1,
       "notes": "Gimnasio y centro deportivo"
     }
