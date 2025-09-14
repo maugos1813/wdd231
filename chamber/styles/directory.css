@@ -66,6 +66,12 @@
     font-weight: 600;
     transition: color 0.3s;
   }
+
+  header nav a.active {
+    border-bottom: 2px solid #444;
+    color: #444;
+  }
+  
   
   header nav a:hover {
     color: #555;
