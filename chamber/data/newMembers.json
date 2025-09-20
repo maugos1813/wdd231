@@ -1,0 +1,59 @@
+[
+    {
+      "companyName": "Tech Solutions Inc.",
+      "logo": "images/favicon-2.ico",
+      "address": "123 Main St, New York, NY",
+      "phone": "+1 (212) 555-1234",
+      "website": "https://www.techsolutions.com",
+      "membership": "Gold"
+    },
+    {
+      "companyName": "Green Energy Co.",
+      "logo": "images/favicon-2.ico",
+      "address": "456 Eco Blvd, San Francisco, CA",
+      "phone": "+1 (415) 555-5678",
+      "website": "https://www.greenenergy.com",
+      "membership": "Silver"
+    },
+    {
+      "companyName": "Smart Build Ltd.",
+      "logo": "images/favicon-2.ico",
+      "address": "789 Industrial Ave, Chicago, IL",
+      "phone": "+1 (312) 555-9012",
+      "website": "https://www.smartbuild.com",
+      "membership": "Bronze"
+    },
+    {
+      "companyName": "Health First Clinic",
+      "logo": "images/favicon-2.ico",
+      "address": "321 Wellness St, Miami, FL",
+      "phone": "+1 (305) 555-3456",
+      "website": "https://www.healthfirst.com",
+      "membership": "Gold"
+    },
+    {
+      "companyName": "Travel Explore",
+      "logo": "images/favicon-2.ico",
+      "address": "654 Adventure Rd, Denver, CO",
+      "phone": "+1 (720) 555-7890",
+      "website": "https://www.travelexplore.com",
+      "membership": "Silver"
+    },
+    {
+      "companyName": "Creative Minds Agency",
+      "logo": "images/favicon-2.ico",
+      "address": "987 Innovation Way, Austin, TX",
+      "phone": "+1 (512) 555-2345",
+      "website": "https://www.creativeminds.com",
+      "membership": "Gold"
+    },
+    {
+      "companyName": "Local Market Store",
+      "logo": "images/favicon-2.ico",
+      "address": "111 Market St, Portland, OR",
+      "phone": "+1 (503) 555-6789",
+      "website": "https://www.localmarket.com",
+      "membership": "Bronze"
+    }
+  ]
+  
