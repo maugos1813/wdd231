@@ -3,6 +3,27 @@ const cardsContainer = document.querySelector("#cards")
 const gridBtn = document.querySelector("#gridBtn");
 const listBtn = document.querySelector("#listBtn");
 
+const toggle = document.querySelector(".nav-toggle");
+const navMenu = document.querySelector("nav ul");
+
+if (toggle && navMenu) {
+    toggle.addEventListener("click", () => {
+        navMenu.classList.toggle("open");
+    });
+}
+
+const links = document.querySelectorAll("nav a");
+links.forEach(link => {
+    if (link.href === window.location.href) {
+        link.classList.add("active");
+    } else {
+        link.classList.remove("active");
+    }
+});
+
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('lastModified').textContent = document.lastModified;
+
 const getMembersData = async () => {
     try {
         const response = await fetch(url);
@@ -21,7 +42,7 @@ const displayMembers = (members) => {
         card.classList.add("member-card");
 
         const image = document.createElement("img");
-        image.src = `images/${member.image}`
+        image.src = `images/${member.image}`;
         image.alt = `Logo of ${member.name}`;
         image.width = 150;
         image.height = 150;
@@ -64,8 +85,5 @@ listBtn.addEventListener("click", () => {
     cardsContainer.classList.add("list-view");
     cardsContainer.classList.remove("grid-view");
 })
-
-document.getElementById('year').textContent = new Date().getFullYear();
-document.getElementById('lastModified').textContent = document.lastModified;
 
 getMembersData();
