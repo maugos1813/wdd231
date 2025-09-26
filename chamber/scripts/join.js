@@ -1,8 +1,9 @@
-
 document.addEventListener("DOMContentLoaded", () => {
+  // Timestamp
   const ts = document.getElementById("timestamp");
   if (ts) ts.value = new Date().toISOString();
 
+  // Modales
   const modals = document.querySelectorAll('.modal');
   const buttons = document.querySelectorAll('.card button');
   const closes = document.querySelectorAll('.modal .close');
@@ -11,28 +12,38 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.addEventListener('click', () => {
       const modalId = btn.parentElement.dataset.modal;
       const modal = document.getElementById(modalId);
-      if (modal) modal.style.display = 'flex';
+      if (modal) {
+        modal.style.display = 'flex';
+        modal.setAttribute('aria-hidden', 'false');
+      }
     });
   });
 
   closes.forEach(btn => {
     btn.addEventListener('click', () => {
-      btn.closest('.modal').style.display = 'none';
+      const modal = btn.closest('.modal');
+      modal.style.display = 'none';
+      modal.setAttribute('aria-hidden', 'true');
     });
   });
 
   window.addEventListener('click', e => {
     modals.forEach(modal => {
-      if (e.target === modal) modal.style.display = 'none';
+      if (e.target === modal) {
+        modal.style.display = 'none';
+        modal.setAttribute('aria-hidden', 'true');
+      }
     });
   });
 
+  // Menú responsive
   const navToggle = document.querySelector('.nav-toggle');
   const navUl = document.querySelector('nav ul');
   if (navToggle && navUl) {
     navToggle.addEventListener('click', () => navUl.classList.toggle('open'));
   }
 
+  // Footer
   document.getElementById('year').textContent = new Date().getFullYear();
   document.getElementById('lastModified').textContent = document.lastModified;
 });
