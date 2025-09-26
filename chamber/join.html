@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chamber of Commerce — Afiliación</title>
+  <meta name="description" content="Formulario de afiliación a la Cámara de Comercio.">
+  <meta name="author" content="Maugos">
+
+  <link rel="icon" type="image/png" href="images/favicon-2.ico">
+  
+  <meta property="og:title" content="Chamber of Commerce — Conectando negocios y comunidad">
+  <meta property="og:description" content="Descubre eventos, noticias y empresas locales destacadas en la Cámara de Comercio.">
+  <meta property="og:image" content="https://maugos1813.github.io/wdd231/chamber/images/maugos.png">
+  <meta property="og:url" content="https://maugos1813.github.io/wdd231/chamber/index.html">
+  <meta property="og:type" content="website">
+
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+
+  <link rel="stylesheet" href="styles/join.css">
+
+  <!-- <script type="module" src="scripts/index.js"></script> -->
+  <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/favicon-2.ico" alt="Logo Cámara de Comercio">
+      <span>Mi Cámara Local</span>
+    </div>
+    <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="directory.html">Directorio</a></li>
+        <!-- <li><a href="about.html">Sobre Nosotros</a></li> -->
+        <li><a href="join.html" class="active">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="join-form">
+      <h1>Formulario de Afiliación</h1>
+      <form method="get" action="thankyou.html">
+        <label>Nombre:
+          <input type="text" name="fname" required autocomplete="given-name" title="Ingrese su nombre">
+        </label>
+
+        <label>Apellido:
+          <input type="text" name="lname" required autocomplete="family-name" title="Ingrese su apellido">
+        </label>
+
+        <label>Cargo en la organización:
+          <input type="text" name="orgtitle" pattern="[A-Za-zÀ-ÿ\s-]{7,}" title="Mínimo 7 caracteres. Solo letras, guiones y espacios." autocomplete="organization-title">
+        </label>
+
+        <label>Correo electrónico:
+          <input type="email" name="email" placeholder="ejemplo@correo.com" required autocomplete="email" title="Ingrese su correo electrónico">
+        </label>
+
+        <label>Teléfono móvil:
+          <input type="tel" name="phone" required autocomplete="tel" title="Ingrese su número de móvil">
+        </label>
+
+        <label>Nombre de la organización:
+          <input type="text" name="organization" required autocomplete="organization" title="Ingrese el nombre de la organización">
+        </label>
+
+        <label>Nivel de membresía:
+          <select name="membership" required title="Seleccione un nivel de membresía">
+            <option value="">Seleccione...</option>
+            <option value="np">NP Membership (sin costo)</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+          </select>
+        </label>
+
+        <label>Descripción de la organización:
+          <textarea name="description" title="Descripción de la organización"></textarea>
+        </label>
+
+        <input type="hidden" name="timestamp" id="timestamp">
+
+        <input type="submit" value="Enviar Solicitud">
+      </form>
+    </section>
+
+    <section class="membership-cards">
+      <h2>Niveles de Membresía</h2>
+      <div class="cards-container">
+        <div class="card" data-modal="modal-np">
+          <h3>NP Membership</h3>
+          <p>Sin costo. Ideal para organizaciones sin fines de lucro.</p>
+          <button type="button">Más información</button>
+        </div>
+        <div class="card" data-modal="modal-bronze">
+          <h3>Bronze Membership</h3>
+          <p>Beneficios iniciales para pequeñas empresas.</p>
+          <button type="button">Más información</button>
+        </div>
+        <div class="card" data-modal="modal-silver">
+          <h3>Silver Membership</h3>
+          <p>Mayor visibilidad y acceso a eventos.</p>
+          <button type="button">Más información</button>
+        </div>
+        <div class="card" data-modal="modal-gold">
+          <h3>Gold Membership</h3>
+          <p>Todos los beneficios y máxima exposición.</p>
+          <button type="button">Más información</button>
+        </div>
+      </div>
+    </section>
+
+    <div id="modal-np" class="modal">
+      <div class="modal-content">
+        <h3>NP Membership</h3>
+        <p>Afiliación gratuita para ONGs y asociaciones comunitarias.</p>
+        <button type="button" class="close">Cerrar</button>
+      </div>
+    </div>
+
+    <div id="modal-bronze" class="modal">
+      <div class="modal-content">
+        <h3>Bronze Membership</h3>
+        <ul>
+          <li>Acceso básico a eventos</li>
+          <li>Boletín mensual</li>
+        </ul>
+        <button type="button" class="close">Cerrar</button>
+      </div>
+    </div>
+
+    <div id="modal-silver" class="modal">
+      <div class="modal-content">
+        <h3>Silver Membership</h3>
+        <ul>
+          <li>Eventos + descuentos</li>
+          <li>Publicidad en la página principal</li>
+        </ul>
+        <button type="button" class="close">Cerrar</button>
+      </div>
+    </div>
+
+    <div id="modal-gold" class="modal">
+      <div class="modal-content">
+        <h3>Gold Membership</h3>
+        <ul>
+          <li>Todos los beneficios de Silver</li>
+          <li>Spotlight en la home</li>
+          <li>Entrenamientos exclusivos</li>
+        </ul>
+        <button type="button" class="close">Cerrar</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Mi Cámara Local | WDD 231</p>
+    <p>Última modificación: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
