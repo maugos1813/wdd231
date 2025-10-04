@@ -1,10 +1,18 @@
 :root {
     --primary-color: #333;
     --accent-color: #0077b6;
+    --accent-hover: #005f87;
     --light-bg: #f8f9fa;
     --text-color: #222;
   }
-
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+  }
+  
   .discover-hero {
     background: url("../images/maugos.webp") center/cover no-repeat;
     color: white;
@@ -23,7 +31,7 @@
     max-width: 700px;
     margin: 0 auto;
   }
-
+  
   .visit-section {
     text-align: center;
     background-color: var(--light-bg);
@@ -41,6 +49,7 @@
     grid-template-columns: 1fr;
     gap: 1.2rem;
     padding: 2rem 1rem;
+    min-height: 1600px; 
   }
   
   .discover-card {
@@ -49,11 +58,13 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
   }
   
   .discover-card img {
     width: 100%;
-    height: 220px;
+    aspect-ratio: 16 / 9; 
     object-fit: cover;
   }
   
@@ -67,6 +78,23 @@
     color: var(--text-color);
   }
   
+  .learn-more {
+    display: inline-block;
+    margin: 0.8rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .learn-more:hover {
+    background-color: var(--accent-hover);
+  }
+  
   @media (min-width: 768px) {
     .discover-card:hover {
       transform: scale(1.03);
@@ -77,12 +105,19 @@
   @media (min-width: 768px) {
     .discover-container {
       grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+        "card1 card2"
+        "card3 card4";
+      min-height: auto; 
     }
   }
   
   @media (min-width: 1024px) {
     .discover-container {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas:
+        "card1 card2 card3 card4"
+        "card5 card6 card7 card8";
     }
   
     .discover-hero h1 {
@@ -90,10 +125,10 @@
     }
   }
   
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
     nav ul {
-      display: none;           
-      flex-direction: column;  
+      display: none;
+      flex-direction: column;
       position: absolute;
       top: 60px;
       right: 10px;
@@ -117,9 +152,7 @@
       color: var(--primary-color);
       margin-left: auto;
     }
-  }
   
-  @media (max-width: 768px) {
     nav ul li {
       margin: 0.5rem 0;
     }
