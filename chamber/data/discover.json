@@ -1,0 +1,45 @@
+{
+    "places": [
+      {
+        "name": "Plaza Central",
+        "description": "El corazón de la ciudad, rodeado de cafés y comercios locales. Ideal para paseos familiares.",
+        "image": "images/maugos.webp"
+      },
+      {
+        "name": "Museo de Historia Local",
+        "description": "Exhibe artefactos y documentos que narran la evolución de la comunidad desde su fundación.",
+        "image": "images/maugos.webp"
+      },
+      {
+        "name": "Parque del Río",
+        "description": "Un espacio natural con senderos, áreas de picnic y vistas panorámicas del río principal.",
+        "image": "images/maugos.webp"
+      },
+      {
+        "name": "Centro Cultural",
+        "description": "Sede de exposiciones, talleres artísticos y eventos culturales abiertos al público.",
+        "image": "images/maugos.webp"
+      },
+      {
+        "name": "Mercado Artesanal",
+        "description": "Ofrece productos elaborados por artesanos locales, desde cerámica hasta textiles únicos.",
+        "image": "images/maugos.webp"
+      },
+      {
+        "name": "Biblioteca Municipal",
+        "description": "Cuenta con una amplia colección de libros, salas de lectura y actividades educativas.",
+        "image": "images/maugos.webp"
+      },
+      {
+        "name": "Mirador del Sol",
+        "description": "Punto panorámico ideal para observar el amanecer o el atardecer sobre la ciudad.",
+        "image": "images/maugos.webp"
+      },
+      {
+        "name": "Teatro Principal",
+        "description": "Lugar emblemático que alberga obras teatrales, conciertos y presentaciones escolares.",
+        "image": "images/maugos.webp"
+      }
+    ]
+  }
+  
