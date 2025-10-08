@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with Maugos, a professional web developer available for projects and collaborations.">
+  <meta name="author" content="Maugos">
+  <meta property="og:title" content="Contact | Maugos Portfolio">
+  <meta property="og:description" content="Contact form and links to connect with Maugos, web developer.">
+  <title>Contact | Maugos Portfolio</title>
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/main.css">
+  <script type="module" src="scripts/main.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+        <h1 class="logo"><img src="images/favicon-2.ico" alt="maugos icon">Maugos</h1>
+      <button id="menu-toggle" aria-label="Open Menu">☰</button>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="page-title">Contact Me</h2>
+    <form id="contactForm" action="form-response.html" method="get">
+      <label for="name">Name:</label>
+      <input id="name" name="name" type="text" required>
+
+      <label for="email">Email:</label>
+      <input id="email" name="email" type="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Maugos | <a href="attributions.html">Attributions</a> | 
+      <a href="https://youtu.be/your-video-link" target="_blank">Project Video</a>
+    </p>
+  </footer>
+</body>
+</html>

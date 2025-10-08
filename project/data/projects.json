@@ -1,0 +1,17 @@
+[
+    {
+      "title": "Construction Tracker",
+      "description": "A tool to manage and monitor ongoing construction projects.",
+      "image": "images/maugos.webp",
+      "tech": "HTML, CSS, JavaScript",
+      "url": "https://github.com/maugos1813/construction-tracker"
+    },
+    {
+      "title": "Concrete Calculator",
+      "description": "An app that estimates concrete volume and cost for various structures.",
+      "image": "images/maugos.webp",
+      "tech": "JavaScript, Node.js",
+      "url": "https://github.com/maugos1813/concrete-calculator"
+    }
+  ]
+  
